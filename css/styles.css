@@ -243,10 +243,11 @@ img {
   text-transform: uppercase;
 }
 
-.hero-link {
+.hero-btn {
   display: inline-block;
   min-width: 200px;
   height: 50px;
+  border: 0;
   border-radius: 4px;
   padding: 10px 32px;
   color: var(--primary-white-color);
@@ -256,6 +257,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*main*/
@@ -639,6 +641,7 @@ footer .socialbar-list-item:not(:last-child) {
   width: 100%;
   height: 100%;
   background-color: var(--backdrop-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -657,9 +660,9 @@ footer .socialbar-list-item:not(:last-child) {
 }
 
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
-  pointer-events: auto;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .btn-close-modal {
